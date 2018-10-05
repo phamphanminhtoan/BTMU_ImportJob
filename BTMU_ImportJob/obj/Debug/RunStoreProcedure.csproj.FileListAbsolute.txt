@@ -1,0 +1,11 @@
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\RunStoreProcedure\bin\Debug\RunStoreProcedure.exe.config
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\RunStoreProcedure\bin\Debug\RunStoreProcedure.exe
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\RunStoreProcedure\bin\Debug\RunStoreProcedure.pdb
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\RunStoreProcedure\obj\Debug\RunStoreProcedure.csprojAssemblyReference.cache
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\RunStoreProcedure\obj\Debug\RunStoreProcedure.Properties.Resources.resources
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\RunStoreProcedure\obj\Debug\RunStoreProcedure.csproj.GenerateResource.cache
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\RunStoreProcedure\obj\Debug\RunStoreProcedure.csproj.CoreCompileInputs.cache
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\RunStoreProcedure\obj\Debug\RunStoreProcedure.exe
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\RunStoreProcedure\obj\Debug\RunStoreProcedure.pdb
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\RunStoreProcedure\obj\Debug\RunStoreProcedure.RunForm.resources
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\RunStoreProcedure\obj\Debug\RunStoreProcedure.exe.licenses

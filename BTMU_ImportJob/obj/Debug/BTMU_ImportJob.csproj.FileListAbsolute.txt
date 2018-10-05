@@ -1,0 +1,10 @@
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\BTMU_ImportJob\bin\Debug\BTMU_ImportJob.exe.config
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\BTMU_ImportJob\bin\Debug\BTMU_ImportJob.exe
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\BTMU_ImportJob\bin\Debug\BTMU_ImportJob.pdb
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\BTMU_ImportJob\obj\Debug\BTMU_ImportJob.Properties.Resources.resources
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\BTMU_ImportJob\obj\Debug\RunStoreProcedure.RunForm.resources
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\BTMU_ImportJob\obj\Debug\BTMU_ImportJob.csproj.GenerateResource.cache
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\BTMU_ImportJob\obj\Debug\BTMU_ImportJob.exe.licenses
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\BTMU_ImportJob\obj\Debug\BTMU_ImportJob.csproj.CoreCompileInputs.cache
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\BTMU_ImportJob\obj\Debug\BTMU_ImportJob.exe
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\BTMU_ImportJob\obj\Debug\BTMU_ImportJob.pdb
