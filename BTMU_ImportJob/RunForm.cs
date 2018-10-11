@@ -26,17 +26,14 @@ namespace RunStoreProcedure
         {
             bool isWinAuthen = true;
             int typeSplit = 0;
+            int cmdTimeout = 0;
             string connString = "";
             string dataSrc = "";
             string db = "";
             string userid = "";
             string password = "";
-            List<string> nonReqTransStoreProc = new List<string>();
-            DataTable tblReqTransStoreProc = new DataTable();
-            int countTrans = 0;
-
-            tblReqTransStoreProc.Columns.Add("id", typeof(int));
-            tblReqTransStoreProc.Columns.Add("sp_name", typeof(string));
+            List<string> storeProc = new List<string>();
+            
 
             int condition = 0;
 
@@ -88,27 +85,15 @@ namespace RunStoreProcedure
                     case "StoreProcedure":
                         foreach (XmlNode elmChild in elm)
                         {
-                            switch (elmChild.Name)
-                            {
-                                case "NonRequiredTransaction":
-                                    foreach (XmlNode elmChildElse in elmChild)
-                                    {
-                                        nonReqTransStoreProc.Add(elmChildElse.Attributes[0].Value.ToString());
-                                    }
-                                    break;
-                                case "RequiredTransaction":
-                                    ++countTrans;
-                                    foreach (XmlNode elmChildElse in elmChild)
-                                    {
-                                        tblReqTransStoreProc.Rows.Add(countTrans, elmChildElse.Attributes[0].Value.ToString());
-                                    }
-                                    break;
-                            }
+                            storeProc.Add(elmChild.Attributes[0].Value.ToString());
                         }
                         break;
                     case "SetUpSpitFile":
                         int.TryParse(elm.Attributes[0].Value, out typeSplit);
                         int.TryParse(elm.FirstChild.Attributes[0].Value, out condition);
+                        break;
+                    case "CommandTimeout":
+                        int.TryParse(elm.Attributes[0].Value, out cmdTimeout);
                         break;
                 }
             }
@@ -120,12 +105,12 @@ namespace RunStoreProcedure
             {
                 connection.Open();
 
-                foreach (string store in nonReqTransStoreProc)
+                foreach (string store in storeProc)
                 {
                     try
                     {
                         SqlCommand cmd = new SqlCommand(store, connection);
-                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.CommandTimeout = cmdTimeout;
                         cmd.CommandType = CommandType.StoredProcedure;
                         cmd.ExecuteNonQuery();
                     }
@@ -133,48 +118,6 @@ namespace RunStoreProcedure
                     {
                         StoreLogToFile(en.Message, typeSplit, condition);
                     }
-                }
-
-                int checkRow = 0;
-                
-                for (int i = 1; i <= countTrans; i++)
-                {
-                    List<string> sp = new List<string>();
-                    for (int j = checkRow; j < tblReqTransStoreProc.Rows.Count; j++)
-                    {
-                        int idNow;
-                        int.TryParse(tblReqTransStoreProc.Rows[j].ItemArray[0].ToString(), out idNow);
-                        if (idNow == i)
-                        {
-                            sp.Add(tblReqTransStoreProc.Rows[j].ItemArray[1].ToString());
-                        }
-                        else if (idNow != i)
-                        {
-                            checkRow = j;
-                            break;
-                        }
-                    }
-
-                    SqlTransaction sqlTransaction = connection.BeginTransaction();
-
-                    foreach (string store in sp)
-                    {
-                        
-                        try
-                        {
-                            SqlCommand cmd = new SqlCommand(store, connection,sqlTransaction);
-                            cmd.CommandType = CommandType.StoredProcedure;
-                            cmd.ExecuteNonQuery();
-                        }
-                        catch (Exception en)
-                        {
-                            sqlTransaction.Rollback();
-                            StoreLogToFile(en.Message, typeSplit, condition);
-                            this.Close();
-                            return;
-                        }
-                    }
-                    sqlTransaction.Commit();
                 }
 
                 connection.Close();

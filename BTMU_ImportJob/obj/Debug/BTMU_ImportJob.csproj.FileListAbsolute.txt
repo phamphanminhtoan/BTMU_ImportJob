@@ -8,3 +8,4 @@ C:\Users\MINHTOAN\Desktop\RunStoreProcedure\BTMU_ImportJob\obj\Debug\BTMU_Import
 C:\Users\MINHTOAN\Desktop\RunStoreProcedure\BTMU_ImportJob\obj\Debug\BTMU_ImportJob.csproj.CoreCompileInputs.cache
 C:\Users\MINHTOAN\Desktop\RunStoreProcedure\BTMU_ImportJob\obj\Debug\BTMU_ImportJob.exe
 C:\Users\MINHTOAN\Desktop\RunStoreProcedure\BTMU_ImportJob\obj\Debug\BTMU_ImportJob.pdb
+C:\Users\MINHTOAN\Desktop\RunStoreProcedure\BTMU_ImportJob\obj\Debug\BTMU_ImportJob.csprojAssemblyReference.cache
