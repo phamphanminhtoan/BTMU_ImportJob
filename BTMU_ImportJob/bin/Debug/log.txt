@@ -1,0 +1,14 @@
+[10/11/2018 3:18:35 PM] Error: Could not find stored procedure 'GetData'.
+[10/11/2018 3:18:35 PM] Error: Could not find stored procedure 'InsertData'.
+[10/11/2018 3:19:24 PM] Error: Could not find stored procedure 'GetData'.
+[10/11/2018 3:19:24 PM] Error: Could not find stored procedure 'InsertData'.
+[10/11/2018 3:23:53 PM] Error: Could not find stored procedure 'GetData'.
+[10/11/2018 3:23:53 PM] Error: Could not find stored procedure 'InsertData'.
+[10/11/2018 3:24:16 PM] Error: Login failed for user 'fptdbconnector'.
+[10/11/2018 3:25:00 PM] Error: Login failed for user 'fptdbconnector'.
+[10/11/2018 3:26:18 PM] Error: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+[10/11/2018 3:26:36 PM] Error: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+[10/11/2018 3:30:29 PM] Error: Login failed for user 'fptdbconnector'.
+[10/11/2018 3:30:37 PM] Error: Login failed for user 'fptdbconnector'.
+[10/11/2018 3:31:40 PM] Error: Login failed for user 'fptdbconnector'.
+[10/11/2018 3:33:07 PM] Error: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
